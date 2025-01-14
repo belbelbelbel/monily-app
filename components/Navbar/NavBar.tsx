@@ -39,19 +39,19 @@ const NavBar = (props: Props) => {
           ? "bg-gray-200/50 shadow-md text-white  z-50 transition-all backdrop-blur-md"
           : "bg-gray-200 md:bg-transparent  z-50"
           }`}>
-          <div className={`tracking-[1.8px]  text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine text-[1.5rem] px-5 ${inter.className}`}>MONILY</div>
+          <div className={`tracking-[1.8px]  text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine md:text-[1.7rem] xl:text-[1.5rem] px-5 ${inter.className}`}>MONILY</div>
           <div className={`flex items-center  font-bold gap-8 md:flex hidden ${inter.className}`}>
             {NavItems.map((item, index) => (
               <div
                 key={index}
-                className={` font-medium cursor-pointer  text-white ${handleActiveLocation(item)}`}
+                className={` font-medium cursor-pointer xl:text-[1.1rem] lg:text-[1.2rem]   text-white ${handleActiveLocation(item)}`}
               >
                 {item.toUpperCase()}
               </div>
             ))}
           </div>
           <div>
-            <Button size={'lg'} className={`${inter.className} ${isScrolled && 'bg-white text-black transition-all' } font-bold text-[1.1rem]`}>CONTACT</Button>
+            <Button size={'lg'} className={`${inter.className} ${isScrolled && 'bg-white  text-black transition-all' } font-bold text-[1.1rem]`}>CONTACT</Button>
           </div>
         </div>
       </div>
