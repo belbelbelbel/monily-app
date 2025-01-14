@@ -1,0 +1,1 @@
+export const NavItems = ['About', 'Why Monily', 'FAQ'];
