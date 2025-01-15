@@ -51,7 +51,7 @@ const NavBar = (props: Props) => {
             ))}
           </div>
           <div>
-            <Button size={'lg'} className={`${inter.className} ${isScrolled && 'bg-white  text-black transition-all' } font-bold text-[1.1rem]`}>CONTACT</Button>
+            <Button size={'lg'} className={`${inter.className} ${isScrolled && 'bg-gradient-to-r from-[#006270] via-black to-[#006270]  text-white transition-all' } font-bold text-[1.1rem]`}>CONTACT</Button>
           </div>
         </div>
       </div>
