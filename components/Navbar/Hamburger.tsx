@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, {useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import "./Hamburger.css"; // Import your CSS styles
 import { NavItems } from "@/constant";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);

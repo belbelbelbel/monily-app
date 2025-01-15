@@ -6,14 +6,14 @@ import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 import Hamburger from './Hamburger';
 
-type Props = {}
+
 
 const inter = Instrument_Sans({
   subsets: ["latin"],
   weight: "700",
 });
 
-const NavBar = (props: Props) => {
+const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = usePathname();
 
