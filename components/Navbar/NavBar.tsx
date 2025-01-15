@@ -4,6 +4,7 @@ import { Instrument_Sans } from 'next/font/google'
 import { NavItems } from '@/constant';
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
+import Hamburger from './Hamburger';
 
 type Props = {}
 
@@ -30,16 +31,16 @@ const NavBar = (props: Props) => {
 
   const handleActiveLocation = (itemHref: string) => {
     return location === itemHref ? 'text-black font-extrabold' : 'text-black font-medium';
-};
+  };
 
   return (
     <div className='w-full  text-white'>
       <div className='w-[85%]  flex  justify-center mx-auto'>
-        <div className={`flex fixed w-[90%] px-10   mt-4 md:rounded-[0.8rem]  bg-clip-text  items-center h-[5rem] justify-between ${isScrolled
+        <div className={`flex fixed w-[90%] md:px-10    mt-4 md:rounded-[0.8rem]  bg-clip-text  items-center h-[5rem] justify-between ${isScrolled
           ? "bg-gray-200/50 shadow-md text-white  z-50 transition-all backdrop-blur-md"
           : "bg-gray-200 md:bg-transparent  z-50"
           }`}>
-          <div className={`tracking-[1.8px]  text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine md:text-[1.7rem] xl:text-[1.5rem] px-5 ${inter.className}`}>MONILY</div>
+          <div className={`tracking-[1.8px]  text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine md:text-[1.7rem] text-[1.5rem] xl:text-[1.5rem] px-5 ${inter.className}`}>MONILY</div>
           <div className={`flex items-center  font-bold gap-8 md:flex hidden ${inter.className}`}>
             {NavItems.map((item, index) => (
               <div
@@ -50,8 +51,11 @@ const NavBar = (props: Props) => {
               </div>
             ))}
           </div>
-          <div>
-            <Button size={'lg'} className={`${inter.className} ${isScrolled && 'bg-gradient-to-r from-[#006270] via-black to-[#006270]  text-white transition-all' } font-bold text-[1.1rem]`}>CONTACT</Button>
+          <div className='hidden md:flex'>
+            <Button size={'lg'} className={`${inter.className} ${isScrolled && '  bg-gradient-to-r from-[#006270] via-black to-[#006270]  text-white transition-all'} font-bold text-[1.1rem]`}>CONTACT</Button>
+          </div>
+          <div className="md:hidden">
+            <Hamburger />
           </div>
         </div>
       </div>

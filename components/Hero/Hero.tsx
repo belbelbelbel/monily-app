@@ -1,13 +1,15 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import NavBar from '../Navbar/NavBar'
 import HerowriteUp from './HerowriteUp'
-
+import AOS from 'aos';
 type Props = {}
 
 const Hero = (props: Props) => {
+ 
   return (
-    <div className='bg-bg-img-1 w-screen xl:h-[100vh]  md:h-[80vh] lg:h-[95vh]  bg-black lg:bg-lefkt  md:bg-cover text-white bg-no-repeat'>
-      <div className='w-full h-full absolute bg-opacity-30 bg-black'></div>
+    <div data-aos="fade-up" className='bg-bg-img-1   xl:h-[100vh]  md:h-[80vh] lg:h-[95vh] h-[80vh]   bg-black  bg-cente  md:bg-cover text-white bg-no-repeat'>
+      <div className='w-full md:h-[80vh] lg:h-[95vh] h-[80vh] z-30 absolute md:bg-opacity-40 bg-opacity-80 bg-black'></div>
       <div className='relative flex   h-full flex-col'>
         <div className='relative'>
           <NavBar />

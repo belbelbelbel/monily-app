@@ -52,7 +52,8 @@ export default {
   			}
   		},
   		backgroundImage: {
-  			'bg-img-1': "url('/bg-img.png')"
+  			'bg-img-1': "url('/bg-img.png')",
+  			'bg-img-2': "url('/bg-img2.png')"
   		},
   		keyframes: {
   			shine: {
