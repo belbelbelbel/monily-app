@@ -44,10 +44,9 @@ const HamburgerMenu = () => {
             <div className="hamburger-container relative " onClick={toggleMenu}>
                 <svg
                     className={`hamburger ${isOpen ? 'open' : ''}`}
-                    width="45"
+                    width="55"
                     height="50"
                     viewBox="0 0 100 100"
-                    color="white"
                 >
                     <line className="line top " x1="20" y1="30" x2="80" y2="30" />
                     <line className="line middle" x1="20" y1="50" x2="80" y2="50" />
@@ -68,10 +67,10 @@ const HamburgerMenu = () => {
                                 variants={itemVariants}
                                 className="cursor-pointer hover:underline mt-6" >
                                 <a
-                                    href={item}
-                                    className={handleActiveLocation(item)}
+                                    href={item.href}
+                                    className={handleActiveLocation(item.href)} 
                                 >
-                                    {item}
+                                    {item.title}
                                 </a>
                             </motion.li>
                         ))}

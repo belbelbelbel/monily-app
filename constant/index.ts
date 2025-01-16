@@ -1,8 +1,21 @@
 import { HiOutlineArrowsRightLeft } from "react-icons/hi2";
 import { BsCopy } from "react-icons/bs";
 import { SiTradingview } from "react-icons/si";
+import { title } from "process";
 
-export const NavItems = ['About', 'Why Monily', 'FAQ'];
+export const NavItems = [{
+    title: 'About',
+    href: 'about'
+},
+{
+    title:'Why Monily',
+    href: 'why-monily'
+},
+{
+    title:'FAQ',
+    href: 'faq'
+}
+];
 
 export const FaeturesArray = [
     {
