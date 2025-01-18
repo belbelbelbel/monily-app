@@ -1,8 +1,7 @@
 import React from 'react'
 import { Instrument_Sans } from 'next/font/google'
 import { Button } from './ui/button'
-import table from "../public/tableimg.png"
-import Image from 'next/image'
+
 const sans = Instrument_Sans({
   weight: '700',
   subsets: ['latin']
