@@ -1,7 +1,7 @@
 import React from 'react'
 import { Instrument_Sans } from 'next/font/google'
 import { Button } from './ui/button'
-import CryptoDashboard from './CryptoDashboard'
+
 
 const sans = Instrument_Sans({
   weight: '700',
