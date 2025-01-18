@@ -12,8 +12,8 @@ const Details = () => {
 
   return (
     <div className='w-full bg-black bg-bg-img-3  bg-no-repeat bg-cover bg-left   flex-col flex gap-4  items-center justify-center text-white h-[25rem] md:h-[40rem] lg:h-[25rem]'>
-      <div data-aos="fade-up"  className={`text-center xl:w-[53%] leading-[2.5rem]  lt:leading-[3.7rem] md:leading-[3.57rem] xl:leading-[3.75rem]  xl:text-[3.2rem] text-[1.5rem] lt:text-[3rem]  md:text-[3.5rem] text-transparent bg-gradient-to-b from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine  ${sans.className}`}>A crypto investment platform that invests in you </div>
-      <div className="xl:text-[0.92rem] lt:text-[1.2rem] text-center  text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[32%]">We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.</div>
+      <div data-aos="fade-up"  className={`text-center xl:w-[53%] leading-[2.5rem]  lt:leading-[3.7rem] md:leading-[3.92rem] xl:leading-[3.75rem]  xl:text-[3.2rem] text-[1.5rem] lt:text-[3rem]  md:text-[3.7rem] text-transparent bg-gradient-to-b from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine  ${sans.className}`}>A crypto investment platform that invests in you </div>
+      <div className="xl:text-[0.92rem] lt:text-[1.2rem] md:text-[1.4rem] text-center  text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[32%]">We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.</div>
       <div className='absolute right-0'>
         <Image src={starimg2} alt='starimg2'/>
       </div>
