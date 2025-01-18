@@ -53,8 +53,12 @@ export default {
 			},
 			backgroundImage: {
 				'bg-img-1': "url('/bg-img.png')",
-				'bg-img-2': "url('/bg-img2.png')"
+				'bg-img-2': "url('/bg-img2.png')",
+				'bg-img-3': "url('/bg-img3.png')",
+				'bg-img-4': "url('/bg-img4.png')",
+				'bg-img-5': "url('/bg-img5.png')",
 			},
+			
 			keyframes: {
 				shine: {
 					'0%': {

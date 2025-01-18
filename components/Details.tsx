@@ -11,11 +11,11 @@ const Details = () => {
 
 
   return (
-    <div className='w-full bg-black  flex-col flex gap-4  items-center justify-center text-white h-[35rem] md:h-[40rem] lg:h-[25rem]'>
-      <div className={`text-center xl:w-[53%] leading-[2.5rem]  lt:leading-[3.7rem] md:leading-[3.56rem] xl:leading-[3.6rem]  xl:text-[2.85rem] text-[1.5rem] md:text-[3.5rem]  lt:text-[3rem] ${sans.className}`}>A crypto investment platform that invests in you </div>
-      <div className="xl:text-[0.8rem] lt:text-[1.2rem] text-center  text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[35%]">We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.</div>
+    <div className='w-full bg-black bg-bg-img-3  bg-no-repeat bg-cover bg-left   flex-col flex gap-4  items-center justify-center text-white h-[25rem] md:h-[40rem] lg:h-[25rem]'>
+      <div className={`text-center xl:w-[53%] leading-[2.5rem]  lt:leading-[3.7rem] md:leading-[3.57rem] xl:leading-[3.75rem]  xl:text-[3.2rem] text-[1.5rem] lt:text-[3rem]  md:text-[3.5rem] text-transparent bg-gradient-to-b from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine  ${sans.className}`}>A crypto investment platform that invests in you </div>
+      <div className="xl:text-[0.92rem] lt:text-[1.2rem] text-center  text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[29%]">We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.</div>
       <div className='absolute right-0'>
-        <Image src={starimg2} alt='starimg2 ' />
+        <Image src={starimg2} alt='starimg2'/>
       </div>
       <div>
       <Button className={`font-bold xl:text-[1.2rem] lg:text-[1.5rem] rounded-[8px] text-[1.03rem] lt:text-[1.75rem] md:text-[1.85rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-10  lg:p-8 xl:py-6 xl:px-6  ${sans.className}`}>Get Started</Button>
