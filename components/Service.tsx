@@ -26,7 +26,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-     <div className='bg-white bg-opacity-20 flex xl:hidden w-full h-[1px]'></div>
+     <div className='bg-white bg-opacity-20 flex lt:hidden w-full h-[1px]'></div>
       <div className='h-[50%] md:py-0 py-10 text-center gap-4   flex-col justify-center items-center flex w-full '>
         <div className={`${sans.className} xl:w-[50%] md:w-[80%] lt:w-[80%] lt:text-[2.3rem] w-[90%] text-[2rem] xl:text-[3.1rem]  md:text-[3.5rem] text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine `}>Buy and sell with the lowest fees in the industry</div>
         <div className='xl:text-[0.92rem] lt:text-[1.2rem]  text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[55%]'>Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.</div>

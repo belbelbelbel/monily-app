@@ -75,13 +75,4 @@ body {
 
 }
 
-.bgradient {
-  background: radial-gradient(circle, 
-  rgba(255, 102, 0, 1) 30%, /* Bright orange center */
-  rgba(255, 102, 0, 0.5) 50%, /* Fading orange mid-point */
-  rgba(0, 0, 0, 0.0) 80%, /* Subtle black gradient */
-  rgba(0, 0, 0, 0) 100% /* Fully transparent edges */
-);
-/* background-repeat: no-repeat; */
-background-size: cover;
-}
+/* */

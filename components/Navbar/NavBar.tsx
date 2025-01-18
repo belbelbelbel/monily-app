@@ -36,14 +36,14 @@ const NavBar = () => {
   console.log(location)
 
   return (
-    <div className='w-full  text-white'>
+    <div className='w-full  h-full text-white'>
       <div className='w-[85%]  flex  justify-center mx-auto'>
-        <div className={`flex fixed w-[90%] md:px-10    mt-4 md:rounded-[0.8rem]  bg-clip-text  items-center h-[5rem] justify-between ${isScrolled
+        <div className={`flex fixed md:w-[90%] w-full  px-6  md:px-10  transition-all mt-4 md:rounded-[0.8rem] rounded-[1.05rem]  bg-clip-text   items-center lt:h-[8.7rem] h-[4.6rem] xl:h-[5rem] justify-between ${isScrolled
           ? "bg-gray-200/50 shadow-md text-white  z-50 transition-all backdrop-blur-md"
-          : "bg-gray-200 md:bg-transparent  z-50"
+          : "bg-gray-200/50 md:bg-transparent   z-50"
           }`}>
           <div onClick={() => navigte.push('/')} className={`tracking-[1.8px]  cursor-pointer text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine md:text-[1.7rem] lt:text-[2.3rem] text-[1.5rem] xl:text-[1.5rem] px-5 ${inter.className}`}>MONILY</div>
-          <div className={`flex items-center  font-bold gap-8 md:flex hidden ${inter.className}`}>
+          <div className={`flex items-center  text-[1.1rem] font-bold gap-8 md:flex hidden ${inter.className}`}>
             {NavItems.map((item, index) => (
               <Link href={item.href} key={index}>
                 <div
