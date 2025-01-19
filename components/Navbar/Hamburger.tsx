@@ -3,9 +3,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import "./Hamburger.css"; // Import your CSS styles
 import { NavItems } from "@/constant";
 import { usePathname } from "next/navigation";
+import { Instrument_Sans } from "next/font/google";
 
+const sans  = Instrument_Sans({
+    subsets: ['latin'],
+    weight:'700'
+})
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
+
     // const [isScrolled, setIsScrolled] = useState(false);
     const location = usePathname();
 
@@ -26,10 +32,12 @@ const HamburgerMenu = () => {
     // }, []);
 
     const handleActiveLocation = (itemHref: string) => {
-        return location === itemHref
-            ? "text-black font-extrabold"
-            : "text-white font-medium";
-    };
+    return location === itemHref
+      ? `text-white font-bold  `
+          
+      : 'text-gray-400 font-medium transition-colors';
+  };
+  
 
     const menuVariants = {
         hidden: { opacity: 0, x: 100 },
@@ -105,7 +113,7 @@ const HamburgerMenu = () => {
                         animate="visible"
                         exit="exit"
                         variants={menuVariants}
-                        className={`fixed z-50 h-[40vh] w-screen top-20 left-0 px-10 py-5  bg-black   shadow-md text-white  z-50 transition-all backdrop-blur-lg`}
+                        className={`fixed z-50 h-[40vh] w-screen top-20 left-0 px-10 py-5  bg-black  shadow  shadow-md text-white  z-50 transition-all backdrop-blur-lg`}
                     >
                         <motion.ul>
                             {NavItems.map((item, index) => (
@@ -118,9 +126,9 @@ const HamburgerMenu = () => {
                                         href={item.href}
                                         className={`${handleActiveLocation(
                                             item.href
-                                        )} block`}
+                                        )} block text-[1.1rem] ${sans.className}`}
                                     >
-                                        {item.title.toUpperCase()}
+                                        {item.title}
                                     </a>
                                 </motion.li>
                             ))}

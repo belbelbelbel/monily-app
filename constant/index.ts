@@ -5,15 +5,15 @@ import { title } from "process";
 
 export const NavItems = [{
     title: 'About',
-    href: 'about'
+    href: '/about'
 },
 {
     title:'Why Monily',
-    href: 'why-monily'
+    href: '/whymonily'
 },
 {
-    title:'FAQ',
-    href: 'faq'
+    title:'Faq',
+    href: '/faq'
 }
 ];
 

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function AboutPage() {
   return (
-    <div className='w-screen bg-black h-screen'>
+    <div className='w-screen bg-black h-[100vh]'>
         <NavBar/>
     </div>
   )

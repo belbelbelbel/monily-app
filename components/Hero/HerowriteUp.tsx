@@ -13,9 +13,9 @@ const HerowriteUp = () => {
         We make crypto clear and simple
       </div>
       <div className='flex flex-col gap-4 items-center'>
-        <div className='text-opacity-60 text-center w-[22rem] lt:text-[1.3rem] xl:text-[1rem] lt:w-[30rem]   xl:w-[30rem] md:w-[37rem] text-white'>Buy, sell, and grow your crypto with Monily, the platform dedicated to every trader at every level.</div>
+        <div className='text-opacity-60 text-center w-[22rem] lt:text-[1.3rem] xl:text-[1.2rem] 3xl:text-[1.5rem] lt:w-[30rem] 3xl:w-[35rem]  xl:w-[30rem] md:w-[37rem] text-white'>Buy, sell, and grow your crypto with Monily, the platform dedicated to every trader at every level.</div>
         <div>
-        <Button className={`font-bold xl:text-[1.35rem] lg:text-[1.5rem] rounded-[8px] text-[1.03rem] lt:text-[1.75rem] md:text-[1.85rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-10  lg:p-8 xl:py-6 xl:px-6  ${sans.className}`}>Get Started</Button>
+        <Button className={`font-bold xl:text-[1.35rem] 3xl:text-[1.7rem] lg:text-[1.5rem] rounded-[8px] text-[1.03rem] lt:text-[1.75rem] md:text-[1.85rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-10  lg:p-8 xl:py-6 xl:px-6 3xl:p-8  ${sans.className}`}>Get Started</Button>
         </div>
       </div>
     </div>

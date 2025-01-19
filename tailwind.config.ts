@@ -57,6 +57,7 @@ export default {
 				'bg-img-3': "url('/bg-img3.png')",
 				'bg-img-4': "url('/bg-img4.png')",
 				'bg-img-5': "url('/bg-img5.png')",
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
 			
 			keyframes: {
@@ -84,7 +85,7 @@ export default {
 				'lg': '1024px',
 				'xl': '1280px',
 				'2xl': '1300px',
-				'3xl': '1400px',
+				'3xl': '1430px',
 				'4xl': '1536px',
 				'5xl': '2500px',
 
