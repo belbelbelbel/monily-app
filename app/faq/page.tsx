@@ -26,7 +26,7 @@ export default function FaqPage() {
             </div>
             <div className='flex items-center h-[33rem] lt:h-[40rem] xl:h-[80%] w-full bg-black bg-cover bg-center bg-bg-img-3 justify-center'>
                 <div className='bg-black lt:h-[100%]  md:w-[80%] w-full rounded-[7px] bg-bg-img-3 bg-contain bg-no-repeat shadow text-white text-opacity-80'>
-                    <div className='md:w-[80%] w-[90%] flex flex-col md:gap-4 xl:gap-2 justify-center mx-auto h-full'>
+                    <div className='md:w-[80%] w-[90%] flex flex-col md:gap-4 xl:gap-0 justify-center mx-auto h-full'>
                         {accordionData.map((item) => (
                             <div key={item.id} className='flex flex-col justify-between cursor-pointer' onClick={() => handleClick(item.id)}>
                                 <div className='flex items-center justify-between'>
@@ -45,7 +45,7 @@ export default function FaqPage() {
                                             transition={{ duration: 0.5 }}
                                             exit={{ opacity: 0, height: 0 }}
                                             className='relative block'>
-                                            <div className={`absolute xl:text-[1rem] lt:text-[1.1rem] w-[90%] md:w-[80%] text-[0.8rem] text-gray-400 ${sans.className}`}>{item.answer}</div>
+                                            <div className={`absolute xl:text-[1rem] lt:text-[1.1rem] w-[90%] md:w-[80%] text-[0.8rem] text-gray-300 ${sans.className}`}>{item.answer}</div>
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
