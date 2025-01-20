@@ -26,12 +26,12 @@ export default function FaqPage() {
             </div>
             <div className='flex items-center h-[33rem] lt:h-[40rem] xl:h-[80%] w-full bg-black bg-cover bg-center bg-bg-img-3 justify-center'>
                 <div className='bg-black lt:h-[100%]  md:w-[80%] w-full rounded-[7px] bg-bg-img-3 bg-contain bg-no-repeat shadow text-white text-opacity-80'>
-                    <div className='md:w-[80%] w-[90%] flex flex-col md:gap-4 justify-center mx-auto h-full'>
+                    <div className='md:w-[80%] w-[90%] flex flex-col md:gap-4 xl:gap-2 justify-center mx-auto h-full'>
                         {accordionData.map((item) => (
                             <div key={item.id} className='flex flex-col justify-between cursor-pointer' onClick={() => handleClick(item.id)}>
                                 <div className='flex items-center justify-between'>
                                     <div className='py-4'>
-                                        <h2 className={`font-bold lt:text-[1.6rem] text-[0.9rem] md:text-[1.4rem] ${sans.className}`}>{item.question}</h2>
+                                        <h2 className={`font-bold lt:text-[1.6rem] text-[0.9rem] md:text-[1.4rem]  ${sans.className}`}>{item.question}</h2>
                                     </div>
                                     <div className='cursor-pointer'>
                                         {answer === item.id ? <FaCircleMinus className='text-[#006270]' /> : <FaCirclePlus />}
