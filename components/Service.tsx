@@ -1,6 +1,8 @@
 import React from 'react'
 import { Instrument_Sans } from 'next/font/google'
 import { Button } from './ui/button'
+import Image from 'next/image'
+import secureimg from '../public/sercureimg.png'
 
 
 const sans = Instrument_Sans({
@@ -9,7 +11,7 @@ const sans = Instrument_Sans({
 })
 const Service = () => {
   return (
-    <div className='w-full md:h-[105rem] h-[45rem] flex flex-col   text-white bg-bg-img-5 bg-no-repeat bg-right-top  bg-black'>
+    <div className='w-full md:h-[105rem] xl: h-[45rem] flex flex-col   text-white bg-bg-img-5 bg-no-repeat bg-right-top  bg-black'>
       <div className='flex w-[100%] md:flex-row flex-col justify-center items-center  h-full  bg-top bg-no-repeat bg-cover h-full'>
         <div className='bg-bg-img-4 md:flex hidden  bg-left  h-[100%] w-full   bg-contain bg-no-repeat'>
           {/* <Image src={serviceimg}  className='bg-black w-[20rem] h-[0rem]'  alt='serviceimage' /> */}
@@ -27,11 +29,23 @@ const Service = () => {
         </div>
       </div>
       <div className='bg-white bg-opacity-20 flex lt:hidden w-full h-[1px]'></div>
-      <div className='h-[50%] md:py-0 py-10 text-center gap-4   flex-col justify-center items-center flex w-full '>
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className={`${sans.className} xl:w-[50%] md:w-[80%] lt:w-[80%] lt:text-[2.3rem] w-[90%] text-[2rem] xl:text-[3.1rem]  md:text-[3.5rem] text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine `}>Buy and sell with the lowest fees in the industry</div>
-        <div className='xl:text-[1rem]   lt:text-[1.2rem]   text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[55%]'>Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.</div>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='h-[50%] md:py-0 py-10 text-center gap-4   flex-col justify-center items-center flex w-full '>
+        <div  className={`${sans.className} xl:w-[50%] md:w-[80%] lt:w-[80%] lt:text-[2.3rem] w-[90%] text-[2rem] xl:text-[3.1rem]  md:text-[3.5rem] text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine `}>Buy and sell with the lowest fees in the industry</div>
+        <div className='xl:text-[1rem]   lt:text-[1.2rem]   text-white text-opacity-70 w-[90%] md:w-[80%]   xl:w-[40%]'>Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.</div>
         <div className='h-full w-full flex items-center justify-center'>
           {/* <CryptoDashboard /> */}
+        </div>
+      </div>
+      <div className='w-full md:h-[70%] h-screen bg-no-repeat text-white bg-black bg-bg-img-7  bg-no-repeat bg- bg-right'>
+        <div className='flex h-full w-[84%]  mx-auto justify-between items-center '>
+          <div data-aos='zoom-in-left' data-aos-anchor-placement="top-bottom" className='flex flex-col gap-3 '>
+            <div className={`${sans.className} text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine font-bold tracking-[1px] text-[2.8rem] w-[45%]`}>Take your first step into safe, secure crypto investing</div>
+            <div className={`${sans.className}  w-[50%] text-[0.9rem] text-white text-opacity-[0.7]`}>Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.</div>
+          </div>
+          <div className='absolute right-0'>
+            <Image alt='secureimg' src={secureimg}/>
+          </div>
+          
         </div>
       </div>
 

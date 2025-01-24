@@ -45,11 +45,11 @@ const NavBar = () => {
   const handleActiveLocation = (itemHref: string) => {
     return location === itemHref
       ? `text-white font-extrabold  before:absolute before:content-[''] 
-          before:w-[15px] before:h-[50px] before:top-[-15px] before:left-[50%] before:translate-x-[-50%]
+          before:w-[20px] before:h-[50px] before:top-[-15px] before:left-[50%] before:translate-x-[-50%]
           before:bg-gradient-to-b from-[#006270] via-gray-300 to-[#006270]
-          before:blur-md before:rounded-full  after:h-[1px] after:w-full after:bg-white after:absolute after:top-10 after:left-0 after:bg-gradient-to-r from-[#006270] via-gray-300 to-[#006270]`
+          before:blur-md before:rounded-full  after:h-[1px] after:w-full transition-all after:bg-white after:absolute after:top-10 after:left-0 after:bg-gradient-to-r from-[#006270] via-gray-300 to-[#006270]`
           
-      : 'text-gray-400 font-medium cursor-pointer xl:text-[1.1rem] lg:text-[1.2rem] hover:text-white transition-colors';
+      : 'text-gray-200 font-medium cursor-pointer xl:text-[1.1rem] lg:text-[1.2rem] hover:text-white transition-colors';
   };
   
   
@@ -68,11 +68,11 @@ const NavBar = () => {
           >
             Monily
           </div>
-          <div className={`flex items-center text-[1.1rem] 3xl:text-[3rem] font-bold gap-8 md:flex hidden ${inter.className}`}>
+          <div className={`flex items-center text-[1.1rem] 3xl:text-[3rem] transaition-all font-bold gap-8 md:flex hidden ${inter.className}`}>
             {NavItems.map((item, index) => (
               <Link href={item.href} key={index}>
                 <div
-                  className={`relative ${handleActiveLocation(item.href)}`}
+                  className={`relative font-bold ${handleActiveLocation(item.href)}`}
                 >
                   {item.title}
                 </div>

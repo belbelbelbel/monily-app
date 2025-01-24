@@ -58,6 +58,7 @@ export default {
 				'bg-img-4': "url('/bg-img4.png')",
 				'bg-img-5': "url('/bg-img5.png')",
 				'bg-img-6': "url('/bg-img6.png')",
+				'bg-img-7': "url('/bg-img7.png')",
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
 			
