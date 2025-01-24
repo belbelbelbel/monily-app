@@ -73,7 +73,7 @@ const NavBar = () => {
           <div className='hidden md:flex'>
             <Button
               size={'lg'}
-              className={`${inter.className} ${isScrolled && 'bg-gradient-to-r from-[#006270] via-black to-[#006270] text-white transition-all'} font-bold text-[1.1rem]`}
+              className={`${inter.className} ${isScrolled && 'bg-gradient-to-r from-[#006270] via-black to-[#006270] text-white  transition-all'} w-[11rem] font-bold text-[1.1rem]`}
             >
               Contact
             </Button>
