@@ -36,7 +36,7 @@ const Service = () => {
           {/* <CryptoDashboard /> */}
         </div>
       </div>
-      <div className='w-full md:h-[70%] h-screen bg-no-repeat text-white bg-black bg-bg-img-7  bg-no-repeat bg- bg-right'>
+      <div className='w-full md:h-[100%] h-screen bg-no-repeat text-white bg-black bg-bg-img-7  bg-no-repeat bg- bg-right'>
         <div className='flex h-full w-[84%]  mx-auto justify-between items-center '>
           <div data-aos='zoom-in-left' data-aos-anchor-placement="top-bottom" className='flex flex-col gap-3 '>
             <div className={`${sans.className} text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine font-bold tracking-[1px] text-[2.8rem] w-[45%]`}>Take your first step into safe, secure crypto investing</div>
@@ -45,7 +45,7 @@ const Service = () => {
           <div className='absolute right-0'>
             <Image alt='secureimg' src={secureimg}/>
           </div>
-          
+
         </div>
       </div>
 
