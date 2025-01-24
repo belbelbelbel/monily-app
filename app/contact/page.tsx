@@ -2,12 +2,12 @@ import NavBar from '@/components/Navbar/NavBar'
 import React from 'react'
 
 
-export default function Contactpage() {
+export default function ContactPage() {
   return (
-    <div className='h-screen w-screen bg-black'>
+    <div className='h-screen w-screen bg-black '>
         <NavBar/>
         <div>
-            
+
         </div>
     </div>
   )

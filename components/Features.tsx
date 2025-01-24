@@ -4,6 +4,12 @@ import { FaeturesArray } from '@/constant'
 import Image from 'next/image'
 import starimg2 from "../public/starimg2.png"
 import Aos from 'aos'
+import { Instrument_Sans } from 'next/font/google'
+
+const sans = Instrument_Sans({
+  weight: '700',
+  subsets: ['latin']
+})
 
 const Features = () => {
     useEffect(() => {
@@ -15,7 +21,7 @@ const Features = () => {
     }, []);
 
     return (
-        <div className='w-full bg-black md:h-[80%]   lg:h-[40rem] xl:h-[60%] h-[100%] items-center flex justify-center'>
+        <div className={`w-full bg-black md:h-[80%]   lg:h-[40rem] xl:h-[60%] h-[100%] items-center flex justify-center ${sans.className}`}>
             <div className='flex  lg:flex-row flex-col items-center gap-4 bg-black h-[100%] justify-center w-[90%] mx-auto'>
                 {
                     FaeturesArray.map((feature, index) => (

@@ -48,8 +48,8 @@ const HamburgerMenu = () => {
                 duration: 0.2,
                 ease: "easeIn",
                 type: "spring",
-                damping: 10,
-                stiffness: 50,
+                // damping: 10,
+                // stiffness: 50,
             },
         },
         exit: {
@@ -66,8 +66,8 @@ const HamburgerMenu = () => {
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
+        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0, delay: 0 } },
     };
 
     return (
@@ -113,7 +113,7 @@ const HamburgerMenu = () => {
                         animate="visible"
                         exit="exit"
                         variants={menuVariants}
-                        className={`fixed z-50 h-[40vh] w-screen top-20 left-0 px-10 py-5  bg-black  shadow  shadow-md text-white  z-50 transition-all backdrop-blur-lg`}
+                        className={`fixed z-50 h-[50vh] flex flex-col justify-center w-screen top-20 left-0 px-10 py-5  bg-black  shadow  shadow-md text-white  z-50 transition-all backdrop-blur-lg`}
                     >
                         <motion.ul>
                             {NavItems.map((item, index) => (
@@ -126,7 +126,7 @@ const HamburgerMenu = () => {
                                         href={item.href}
                                         className={`${handleActiveLocation(
                                             item.href
-                                        )} block text-[1.1rem] ${sans.className}`}
+                                        )}  text-[1.1rem] z-50 relative ${sans.className}`}
                                     >
                                         {item.title}
                                     </a>

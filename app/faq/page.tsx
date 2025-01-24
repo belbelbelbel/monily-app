@@ -4,12 +4,17 @@ import { useState } from 'react';
 import { accordionData } from '@/constant';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaCircleMinus, FaCirclePlus } from 'react-icons/fa6';
-import { Instrument_Sans } from 'next/font/google';
+import { Instrument_Sans,Righteous } from 'next/font/google';
 
 const sans = Instrument_Sans({
     subsets: ['latin'],
     weight: '700',
 });
+
+const rightoeus = Righteous({
+    subsets: ['latin'],
+    weight: '400',
+})
 
 export default function FaqPage() { 
     const [answer, setAnswer] = useState<number | "">("");
@@ -22,7 +27,7 @@ export default function FaqPage() {
                 <NavBar />
             </div>
             <div className='flex relative top-8 items-center lt:justify-center  text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine lt:w-[80%] w-[90%] mx-auto'>
-                <div className={`lt:text-[2rem] text-[1.4rem] ${sans.className}`}>FREQUENTLY ASKED QUESTIONS</div>
+                <div className={`lt:text-[2rem] text-[1.4rem] ${rightoeus.className}`}>FREQUENTLY ASKED QUESTIONS</div>
             </div>
             <div className='flex items-center h-[33rem] lt:h-[40rem] xl:h-[80%] w-full bg-black bg-cover bg-center bg-bg-img-3 justify-center'>
                 <div className='bg-black lt:h-[100%]  md:w-[80%] w-full rounded-[7px] bg-bg-img-3 bg-contain bg-no-repeat shadow text-white text-opacity-80'>

@@ -29,18 +29,9 @@ const NavBar = () => {
     };
   }, []);
 
-  // const handleActiveLocation = (itemHref: string) => {
-  //   return location === itemHref
-  //     ? `text-white font-extrabold relative before:absolute before:content-[''] 
-  //         before:w-[11px] before:h-[11px] before:top-[-16px] before:left-[50%] before:translate-x-[-50%] 
-  //         before:bg-gradient-to-r from-[] to-blue-400 before:rounded-full 
-  //         before:shadow-[0_0_15px_3px_rgba(138,43,226,0.8)] 
-  //         before:animate-flame 
-  //         after:absolute after:content-[''] 
-  //         after:w after:h-[2px] after:top-8 after:bg-gradient-to-r from-[#006270] via-blue-500 to-purple-600 
-  //         after:rounded-full after:transition-all`
-  //     : 'text-gray-400 font-medium cursor-pointer xl:text-[1.1rem] lg:text-[1.2rem] hover:text-white transition-colors';
-  // };
+
+
+
 
   const handleActiveLocation = (itemHref: string) => {
     return location === itemHref
