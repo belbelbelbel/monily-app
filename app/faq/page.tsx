@@ -36,7 +36,7 @@ export default function FaqPage() {
                             <div key={item.id} className='flex flex-col justify-between cursor-pointer' onClick={() => handleClick(item.id)}>
                                 <div className='flex items-center justify-between'>
                                     <div className='py-4'>
-                                        <h2 className={`font-bold lt:text-[1.6rem] text-[0.9rem] md:text-[1.4rem]  ${sans.className}`}>{item.question}</h2>
+                                        <h2 className={`font-bold lt:text-[1.6rem] text-[1.1rem] md:text-[1.4rem]  ${sans.className}`}>{item.question}</h2>
                                     </div>
                                     <div className='cursor-pointer'>
                                         {answer === item.id ? <FaCircleMinus className='text-[#006270]' /> : <FaCirclePlus />}

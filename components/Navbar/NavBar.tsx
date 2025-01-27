@@ -59,7 +59,7 @@ const NavBar = () => {
           >
             Monily
           </div>
-          <div className={`flex items-center text-[1.1rem] 3xl:text-[3rem] transaition-all font-bold gap-8 md:flex hidden ${inter.className}`}>
+          <div className={`flex items-center text-[1.1rem] 3xl:text-[3rem] transaition-all font-bold gap-8 lg:flex hidden ${inter.className}`}>
             {NavItems.map((item, index) => (
               <Link href={item.href} key={index}>
                 <div
@@ -70,7 +70,7 @@ const NavBar = () => {
               </Link>
             ))}
           </div>
-          <div className='hidden md:flex'>
+          <div className='hidden lg:flex'>
             <Button
               size={'lg'}
               className={`${inter.className} ${isScrolled && 'bg-gradient-to-r from-[#006270] via-black to-[#006270] text-white  transition-all'} w-[11rem] font-bold text-[1.1rem]`}
@@ -78,7 +78,7 @@ const NavBar = () => {
               Contact
             </Button>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Hamburger />
           </div>
         </div>

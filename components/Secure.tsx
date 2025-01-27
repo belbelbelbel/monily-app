@@ -16,7 +16,7 @@ export default function Secure() {
                     <div className={`${sans.className}  w-[50%] text-[0.8rem] text-white text-opacity-[0.7]`}>Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.</div>
                 </div>
                 <div>
-                <Button className={`font-bold xl:text-[1.3rem] 3xl:text-[1.7rem] lg:text-[1.5rem] rounded-[8px] text-[1.03rem] lt:text-[1.75rem] md:text-[1.85rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-10  lg:p-8 xl:py-6 xl:px-6 3xl:p-8  ${sans.className}`}>Get Started</Button>
+                <Button className={`font-bold xl:text-[1.2rem] w-full xl:w-[11rem] 3xl:text-[1.5rem] lg:text-[1.3rem] rounded-[8px] text-[1.03rem] lt:text-[1.55rem] md:text-[1.65rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-8  lg:p-8 xl:py-6 xl:px-6 3xl:p-8  ${sans.className}`}>Get Started</Button>
                 </div>
             </div>
         </div>
