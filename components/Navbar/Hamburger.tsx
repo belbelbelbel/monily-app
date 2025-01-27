@@ -33,9 +33,9 @@ const HamburgerMenu = () => {
 
     const handleActiveLocation = (itemHref: string) => {
     return location === itemHref
-      ? `text-white font-bold  `
+      ? ` font-bold text-xl text-transparent bg-gradient-to-b from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine font-bold  `
           
-      : 'text-gray-400 font-medium transition-colors';
+      : 'text-white font-medium transition-colors';
   };
   
 

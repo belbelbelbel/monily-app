@@ -48,14 +48,14 @@ const NavBar = () => {
 
   return (
     <div className='w-full h-full text-white'>
-      <div className='w-[85%] flex justify-center mx-auto'>
+      <div className='md:w-[85%] w-full flex justify-center mx-auto'>
         <div className={`flex fixed md:w-[90%] w-full px-6 md:px-10 transition-all mt-4 bg-clip-text md:rounded-[0.8rem] rounded-[1.05rem] items-center h-[4.6rem] xl:h-[5rem] justify-between ${isScrolled
           ? "bg-gray-900/80 shadow-md text-white z-50 transition-all backdrop-blur-lg"
           : "bg-transparent z-50"
           }`}>
           <div
             onClick={() => navigate.push('/')}
-            className={`tracking-[1.8px] cursor-pointer text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine md:text-[1.7rem] lt:text-[2.3rem] text-[1.5rem] 3xl:text-[2rem] xl:text-[1.5rem] px-5 ${inter.className}`}
+            className={`tracking-[1.8px] cursor-pointer text-white bg-gradient-to-r from-[#006270] via-yellow-500 to-[#006270] bg-clip-text animate-shine md:text-[1.7rem] lt:text-[2.3rem] text-[1.5rem] 3xl:text-[2rem] xl:text-[1.5rem] md:px-5 ${inter.className}`}
           >
             Monily
           </div>
