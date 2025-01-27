@@ -36,14 +36,14 @@ const Service = () => {
           {/* <CryptoDashboard /> */}
         </div>
       </div>
-      <div className='w-full lg:h-[100%] lt:h-[25rem]  xl:py-0 py-10 h-screen bg-no-repeat text-white bg-black md:bg-bg-img-7  bg-no-repeat bg- bg-right'>
-        <div className='flex h-full  w-[84%] md:flex-row flex-col  mx-auto justify-between items-center '>
+      <div className='w-full lg:h-[100%] lt:h-[125rem]  xl:py-0 py-10 h-screen bg-no-repeat text-white bg-black lg:bg-bg-img-7  bg-no-repeat bg- bg-right'>
+        <div className='flex h-full  w-[84%] lg:flex-row flex-col  mx-auto justify-between items-center '>
           <div data-aos='zoom-in-left' data-aos-anchor-placement="top-bottom" className='flex w-full items-center  xl:items-start flex-col gap-3 '>
-            <div className={`${sans.className}  text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine font-bold xl:tracking-[1px] md:text-left text-center text-[2rem] xl:text-[2.8rem] w-full md:w-[45%]`}>Take your first step into safe, secure crypto investing</div>
-            <div className={`${sans.className} xl:w-[50%] w-full text-[0.9rem] md:text-[1.1rem] text-center xl:text-left  text-white text-opacity-[0.7]`}>Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.</div>
-            <Button className={`font-bold xl:text-[1.3rem] 3xl:text-[1.7rem] xl:w-[12rem] lg:text-[1.5rem] rounded-[8px] text-[1.03rem] lt:text-[1.75rem] md:text-[1.85rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-8  lg:p-8 xl:py-6 xl:px-6 3xl:p-8  ${sans.className}`}>Get Started</Button>
+            <div className={`${sans.className}  text-transparent bg-gradient-to-r from-[#006270] via-gray-300 to-blue-500 bg-clip-text animate-shine font-bold xl:tracking-[1px] lg:text-left text-center lt:text-[2rem] text-[1.6rem] xl:text-[2rem] md:text-[3.3rem] xl:text-[2.8rem]  w-full lg:w-[45%]`}>Take your first step into safe, secure crypto investing</div>
+            <div className={`${sans.className} xl:w-[50%] w-full text-[0.9rem] lg:text-[1.1rem] text-center xl:text-left  text-white text-opacity-[0.7]`}>Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.</div>
+            <Button className={`font-bold xl:text-[1.3rem] 3xl:text-[1.7rem] xl:w-[12rem] lg:text-[1.5rem] rounded-[8px] text-[1.03rem] lt:text-[1.75rem] lg:text-[1.85rem] bg-gradient-to-r from-[#006270] via-black to-[#006270] p-6 lt:p-8  lg:p-8 xl:py-6 xl:px-6 3xl:p-8  ${sans.className}`}>Get Started</Button>
           </div>
-          <div className='absolute hidden md:flex right-0'>
+          <div className='absolute hidden lg:flex right-0'>
             <Image alt='secureimg' src={secureimg}/>
           </div>
 
